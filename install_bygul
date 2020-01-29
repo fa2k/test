@@ -1,1 +1,15 @@
- yum install open-vm-tools.x86_64
+yum install open-vm-tools.x86_64
+systemctl enable vmtoolsd
+systemctl start vmtoolsd
+
+yum install docker
+systemctl enable docker
+systemctl start docker
+
+yum search nfs-utils
+mkdir /data/common
+mount boston.nscamg.local:/ifs/data/common /data/common
+
+mkdir /data/runScratch.boston
+# Make sure the IP is added to the list through OneFS
+mount boston.nscamg.local:/ifs/data/runScratch /data/runScratch.boston
