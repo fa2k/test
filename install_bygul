@@ -14,4 +14,4 @@ mkdir /data/runScratch.boston
 # Make sure the IP is added to the list through OneFS
 mount boston.nscamg.local:/ifs/data/runScratch /data/runScratch.boston
 
-yum install vim
+yum install vim screen
