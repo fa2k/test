@@ -10,7 +10,7 @@
 
 # Install repo file & GPG key for EPEL
     scp paalmbj@orc1.ous.nsc.local:/etc/yum.repos.d/local-cent7.repo /etc/yum.repos.d/
-    scp arvindsu@orc1.ous.nsc.local:/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7 /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+    scp paalmbj@orc1.ous.nsc.local:/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7 /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 
 ```bash
 firewall-cmd --permanent --add-service=http
