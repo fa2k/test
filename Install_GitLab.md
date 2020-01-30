@@ -29,6 +29,7 @@ Edit `http://gitlab.nscamg.local`, the line with ``external_url``
 
     external_url 'http://gitlab.nscamg.local'
 
+Then run
 
     # gitlab-ctl reconfigure
 
