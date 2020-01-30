@@ -1,0 +1,29 @@
+# GitLab
+
+We use Omnibus Gitlab, CentOS7 yum package.
+
+## GitLab overview
+
+The gitlab server is at http://gitlab.nscamg.local
+
+TODO: User accounts
+
+Projects used in GitLab:
+
+TODO Table
+
+
+## Installation and configuration
+
+The package is installed using
+
+    # yum install gitlab-ee
+
+Post-installation configuration:
+
+    # gitlab-ctl reconfigure
+
+Firewall rules:
+
+    firewall-cmd --permanent --add-service=http
+    firewall-cmd --permanent --add-service=https
